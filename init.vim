@@ -16,6 +16,7 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
 Plugin 'roxma/clang_complete'
 Plugin 'mhartington/oceanic-next'
+Plugin 'jiangmiao/auto-pairs'
 
 
 " All of your Plugins must be added before the following line
@@ -34,3 +35,8 @@ endif
 " Theme
 syntax enable
 colorscheme OceanicNext
+
+" self config
+set nu
+set tabstop=4
+set shiftwidth=4
