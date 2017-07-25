@@ -12,11 +12,13 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'msanders/snipmate.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'roxma/vim-hug-neovim-rpc'
-Plugin 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
-Plugin 'roxma/clang_complete'
+" Plugin 'roxma/vim-hug-neovim-rpc'
+" Plugin 'roxma/nvim-completion-manager'
+" Plugin 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
+" Plugin 'roxma/clang_complete'
 Plugin 'mhartington/oceanic-next'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 
 " All of your Plugins must be added before the following line
@@ -40,3 +42,6 @@ colorscheme OceanicNext
 set nu
 set tabstop=4
 set shiftwidth=4
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
