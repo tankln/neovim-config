@@ -18,7 +18,9 @@ Plugin 'mattn/emmet-vim'
 " Plugin 'roxma/clang_complete'
 Plugin 'mhartington/oceanic-next'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'padawan-php/deoplete-padawan'
+Plugin 'zchee/deoplete-go'
 
 
 " All of your Plugins must be added before the following line
@@ -45,3 +47,5 @@ set shiftwidth=4
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog = '/usr/bin/python'
