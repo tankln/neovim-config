@@ -19,8 +19,12 @@ Plugin 'mattn/emmet-vim'
 Plugin 'mhartington/oceanic-next'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'Shougo/deoplete.nvim'
-Plugin 'padawan-php/deoplete-padawan'
+" Plugin 'padawan-php/deoplete-padawan'
 Plugin 'zchee/deoplete-go'
+Plugin 'ayu-theme/ayu-vim' " or other package manager"
+Plugin 'dracula/vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'Solarized'
 
 
 " All of your Plugins must be added before the following line
@@ -29,21 +33,33 @@ filetype plugin indent on    " required
 " autocmd FileType php LanguageClientStart
 
 " For Neovim 0.1.3 and 0.1.4
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Or if you have Neovim >= 0.1.5
 if (has("termguicolors"))
- set termguicolors
+ " set termguicolors
+ " let ayucolor="light"  " for light version of theme
+ " let ayucolor="mirage" " for mirage version of theme
+ " let ayucolor="dark"   " for dark version of theme"
 endif
 
 " Theme
 syntax enable
-colorscheme OceanicNext
+colorscheme solarized
+set background=dark
+" colorscheme molokai
 
 " self config
 set nu
 set tabstop=4
 set shiftwidth=4
+set encoding=utf-8
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set enc=utf8
+set fencs=utf8,gbk,gb2312,gb18030
+" set fileencodings=ucs-bom,utf-8,cp936
+set fileencoding=utf-8
+set termencoding=utf-8
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
