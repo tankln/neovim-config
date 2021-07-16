@@ -1,5 +1,10 @@
 # neovim-config
 neovim config
+
+#### wsl neovim config file
+wsl/init.lua
+
+=======================================================================
 #### install vundle to manage plugins
 sudo apt install xclip xsel
 ####
